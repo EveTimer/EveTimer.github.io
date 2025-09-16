@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <title>Eve Timer</title> 
+        </head>
+        
+        Days: <label>
+            <input type="number" id="days">
+        </label>
+        <br>
+        Hours: <label>
+            <input type="number" id="hours">
+        </label>
+        <br>
+        Minutes: <label>
+            <input type="number" id="minutes">
+        </label>
+        <br>
+        <br>
+        Start timestamp: <label>
+            <input type="number" id="current">
+        </label>
+        <br>
+        <button onclick="currTime()">
+            Current Time</button>
+        <br>
+        <p id="curr_time">Current Time: </p>
+        <br>
+        <button onclick="calc()">
+            Calc</button>
+        <br>
+        <p id="out">temp</p>
+        
+    </body>
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+        body {
+            padding: 50;
+        }
+        header {
+            font-size: 40px;
+            font-family: sans-serif;
+            font: bold;
+            border-bottom: 2px solid #000000;
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 2px solid black;
+        }
+
+        a:hover {
+            border-bottom: 4px solid black; /* Adds underline on hover */
+        }
+    </style>
+    <script src="app.js"></script>
+</html>
